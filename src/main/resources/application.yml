@@ -1,0 +1,15 @@
+line:
+  bot:
+    channel-secret: secret
+    channel-token: token
+    channel-token-supply-mode: fixed
+    connect-timeout: 60000
+    handler:
+      enabled: true
+      path: /callback
+    read-timeout: 60000
+    write-timeout: 60000
+
+openai:
+  token: token
+  model: gpt-3.5-turbo
