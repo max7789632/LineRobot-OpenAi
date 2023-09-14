@@ -70,18 +70,21 @@ public class Handler {
         String userMessage = event.getMessage().getText();
         System.out.println("輸入文字: " + userMessage);
 
+        // 設定OpenAi Token, timeout 60秒
         OpenAiService service = new OpenAiService(openAiToken, Duration.ofSeconds(60));
 
         List<ChatMessage> chatMessageList = new ArrayList<>();
         ChatMessage chatMessage = new ChatMessage();
         chatMessage.setRole("user");
-        chatMessage.setContent("請使用繁體中文回答我" + userMessage);
+        chatMessage.setContent("請使用繁體中文回答我 " + userMessage);
         chatMessageList.add(chatMessage);
 
+        // 設定 模組, 傳入訊息
         ChatCompletionRequest completionRequest = ChatCompletionRequest.builder()
                 .model(completionModel)
                 .messages(chatMessageList)
                 .build();
+
         ChatCompletionResult completionResult = service.createChatCompletion(completionRequest);
         List<ChatCompletionChoice> choices = completionResult.getChoices();
 
