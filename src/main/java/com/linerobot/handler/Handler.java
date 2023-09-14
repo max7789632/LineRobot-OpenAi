@@ -16,6 +16,8 @@ import com.theokanning.openai.completion.chat.ChatMessage;
 import com.theokanning.openai.service.OpenAiService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -24,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 @Slf4j
 @LineMessageHandler
 public class Handler {
