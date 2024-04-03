@@ -1,5 +1,5 @@
 # 一個簡易的 AI聊天 Line機器人
-# 使用LineBotAPI 串接 ChatGPT API
+使用LineBotAPI 串接 ChatGPT API
 
 
 
@@ -12,8 +12,8 @@
 
 * 註冊 LINE Developers帳號
 並建立一個Bot
-Basic settings 頁面 取得 *Channel secret
-Messaging API settings頁面 取得 *Channel access token
+Basic settings 頁面 取得 Channel secret
+Messaging API settings頁面 取得 Channel access token
 Messaging API settings頁面 設定 Webhook URL
 因 LineAPI 只接受https 本地執行可使用 ngrok
 Ex: https://*********/callback
