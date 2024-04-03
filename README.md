@@ -3,18 +3,34 @@
 
 # 使用方式:
 * 註冊OpenAI帳號
+
 因為是付費服務須購買使用量
+
+
 取得 *OpenAI token
 
 * 註冊 LINE Developers帳號
+
+
 並建立一個Bot
+
+
 Basic settings 頁面 取得 Channel secret
+
+
 Messaging API settings頁面 取得 Channel access token
+
+
 Messaging API settings頁面 設定 Webhook URL
+
+
 因 LineAPI 只接受https 本地執行可使用 ngrok
+
+
 Ex: https://*********/callback
 
 * 將 OpenAI token、Channel secret、Channel access token
+
 填入設定檔 application.yml
 
 * 開始運行
