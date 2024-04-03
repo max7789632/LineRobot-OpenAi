@@ -1,14 +1,10 @@
 # 一個簡易的 AI聊天 Line機器人
 使用LineBotAPI 串接 ChatGPT API
 
-
-
-
 # 使用方式:
 * 註冊OpenAI帳號
 因為是付費服務須購買使用量
 取得 *OpenAI token
-
 
 * 註冊 LINE Developers帳號
 並建立一個Bot
